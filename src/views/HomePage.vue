@@ -1,15 +1,22 @@
 <script lang="ts">
-    console.log("This is the home page")
-    export default {}
+console.log("This is the home page")
+import MathMenu from '@/components/MathMenu.vue';
+export default { components: { MathMenu } }
 </script>
 
 <template>
-    <h1>Teste</h1>
+    <MathMenu/>
 </template>
 
 <style scoped>
     h1 {
-        color: #fff;
+        color: black;
     }
-
+    .homepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 </style>

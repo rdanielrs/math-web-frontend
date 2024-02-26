@@ -91,4 +91,7 @@ body {
 body {
   /*background: #222222;*/
   background: #e7ecef;
+  display: flex;
+  flex-direction: column;
+  flex-flow: 0;
 }

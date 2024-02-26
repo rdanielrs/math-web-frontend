@@ -28,9 +28,9 @@ export default {}
         /*background: #274c77;*/
         height: 85px;
         width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
+        /*top: 0;
+        left: 0;*/
+        /*position: absolute;*/
         display: flex;
         align-items: center;
         justify-content: center;
