@@ -13,9 +13,9 @@ export default {}
 
 <style scoped lang="css">
     footer {
-        position: absolute;
+        /*position: absolute;
         bottom: 0;
-        left: 0;
+        left: 0;*/
         width: 100%;
         /*height: 200px;*/
         height: 200px;
