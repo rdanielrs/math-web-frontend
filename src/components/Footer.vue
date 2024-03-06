@@ -17,6 +17,7 @@ export default {}
         bottom: 0;
         left: 0;
         width: 100%;
+        /*height: 200px;*/
         height: 200px;
         background: #22223b;
     }

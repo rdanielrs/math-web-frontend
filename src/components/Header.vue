@@ -58,6 +58,7 @@ export default {}
             font-size: 20px;
             font-family: "Open Sans", sans-serif;
             padding-left: 10px;
+            text-decoration: none;
         }
         a:hover {
             background: transparent;
