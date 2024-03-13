@@ -37,7 +37,9 @@ export default {}
     }
 
     .header_div {
-        background: #274c77;
+        /*background: #274c77;*/
+        border: 2px solid #76ABAE;
+        background: transparent;
         width: 95%;
         height: 75px;
         border-radius: 10px;
@@ -46,7 +48,8 @@ export default {}
         align-items: center;
         padding: 0px 10px 0px 10px;
         h1 {
-            color: #fff;
+            /*color: #fff;*/
+            color: #76ABAE;
             font-family: "Kode Mono", monospace;
         }
 
@@ -54,7 +57,7 @@ export default {}
 
     .nav {
         a {
-            color: #fff;
+            color: #76ABAE;
             font-size: 20px;
             font-family: "Open Sans", sans-serif;
             padding-left: 10px;

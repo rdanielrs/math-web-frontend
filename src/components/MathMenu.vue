@@ -1,10 +1,24 @@
 <template>
     <div class="container-operation-picker">
         <div class="operation-picker">
-            <button class="operation-btn">
-                Multiplication
+            <button v-for="operation in operations" class="operation-btn">
+                <div class="icon-container">
+                    {{ operation.icon }}
+                </div>
+                <div class="subtitle">
+                    {{ operation.title }}
+                </div>
             </button>
-            <button class="operation-btn">
+
+            <!--<button class="operation-btn">
+                <div class="icon-container">
+                    X
+                </div>
+                <div class="subtitle">
+                    Multiplication
+                </div>
+            </button>-->
+            <!--<button class="operation-btn">
                 Division
             </button>
             <button class="operation-btn">
@@ -39,16 +53,49 @@
             </button>
             <button class="operation-btn">
                 Something
-            </button>
+            </button>-->
         </div>
     </div>
 
 </template>
-<script lang="ts">
+<script>
 console.log("Math menu")
+import { ref } from 'vue';
+
+/*const operations = ref([
+    {
+        title: 'Multiplication',
+        icon: 'X',
+        link: '/multiplication'
+    },
+    {
+        title: 'Division',
+        icon: '÷',
+        link: '/division'
+    }
+])**/
 
 
-export default {}
+export default {
+    data() {
+        return {
+            name: 'MathMenu',
+            operations: [
+                {
+                    title: 'Multiplication',
+                    icon: 'X',
+                    link: '/multiplication'
+                },
+                {
+                    title: 'Division',
+                    icon: '÷',
+                    link: '/division'
+                }
+            ]
+        }
+    }
+} 
+
 </script>
 <style scoped lang="css">
     .container-operation-picker {
@@ -62,7 +109,8 @@ export default {}
     .operation-picker {
         width: 50%;
         /*background: #8B8C89;*/
-        background: #8DA9C4;
+        /*background: #8DA9C4;*/
+        /*border: 2px solid #dadada;*/
         min-height: 500px;
         border-radius: 10px;
         height: auto;
@@ -70,18 +118,35 @@ export default {}
         align-items: center;
         display: grid;
         grid-template-columns: repeat(auto-fill, 210px);
-        grid-row-gap: 10px;
+        grid-row-gap: 15px;
         padding: 20px 0px 20px 0px;
     }
 
     .operation-btn {
         width: 200px;
-        height: 200px;
-        background: #134074;
+        height: 140px;
+        /*background: #134074;*/
+        /*background: #76ABAE;*/
+        background: transparent;
         border-radius: 10px;
-        border: 2px solid #fff;
-        color: #fff;
+        border: 2px solid #76ABAE;
+        color: #76ABAE;
         font-size: 24px;
+    }
+
+    .icon-container {
+        height: 60px;
+        border-bottom: 1px solid #76ABAE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subtitle {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .operation-btn:hover {
