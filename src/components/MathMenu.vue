@@ -9,71 +9,13 @@
                     {{ operation.title }}
                 </div>
             </button>
-
-            <!--<button class="operation-btn">
-                <div class="icon-container">
-                    X
-                </div>
-                <div class="subtitle">
-                    Multiplication
-                </div>
-            </button>-->
-            <!--<button class="operation-btn">
-                Division
-            </button>
-            <button class="operation-btn">
-                Square Root
-            </button>
-            <button class="operation-btn">
-                Factorization
-            </button>
-            <button class="operation-btn">
-                Mean
-            </button>
-            <button class="operation-btn">
-                Mode
-            </button>
-            <button class="operation-btn">
-                Median
-            </button>
-            <button class="operation-btn">
-                First Degree Equation
-            </button>
-            <button class="operation-btn">
-                Second Degree Equation
-            </button>
-            <button class="operation-btn">
-                Trigonometry
-            </button>
-            <button class="operation-btn">
-                Proportional Quantities
-            </button>
-            <button class="operation-btn">
-                Probability
-            </button>
-            <button class="operation-btn">
-                Something
-            </button>-->
         </div>
     </div>
 
 </template>
-<script>
+<script lang="ts">
 console.log("Math menu")
 import { ref } from 'vue';
-
-/*const operations = ref([
-    {
-        title: 'Multiplication',
-        icon: 'X',
-        link: '/multiplication'
-    },
-    {
-        title: 'Division',
-        icon: '÷',
-        link: '/division'
-    }
-])**/
 
 
 export default {
@@ -90,7 +32,59 @@ export default {
                     title: 'Division',
                     icon: '÷',
                     link: '/division'
+                },
+                {
+                    title: 'Square Root',
+                    icon: '√',
+                    link: '/sqrt'
+                },
+                {
+                    title: 'Factorization',
+                    icon: 'a² - b²',
+                    link: '/factorization'
+                },
+                {
+                    title: 'Mean',
+                    icon: 'x1 + xn / xn',
+                    link: '/mean'
+                },
+                {
+                    title: 'Mode',
+                    icon: 'x1 + x2 + x2 + x3',
+                    link: '/mode'
+                },
+                {
+                    title: 'Median',
+                    icon: 'x1 + x2 + x3',
+                    link: '/mode'
+                },
+                {
+                    title: 'First Degree Equation',
+                    icon: 'ax + b = c',
+                    link: '/firstdegreeq'
+                },
+                {
+                    title: 'Second Degree Equation',
+                    icon: 'ax² + bx + c = 0',
+                    link: '/secdegreeq'
+                },
+                {
+                    title: 'Trigonometry',
+                    icon: 'θ',
+                    link: '/trigonometry'
+                },
+                {
+                    title: 'Proportional Quantities',
+                    icon: 'y = x',
+                    link: '/proportionalq'
+                },
+                {
+                    title: 'Probability',
+                    icon: '%',
+                    link: '/probability'
                 }
+                
+
             ]
         }
     }
@@ -124,7 +118,7 @@ export default {
 
     .operation-btn {
         width: 200px;
-        height: 140px;
+        height: 180px;
         /*background: #134074;*/
         /*background: #76ABAE;*/
         background: transparent;
@@ -143,7 +137,7 @@ export default {
     }
 
     .subtitle {
-        height: 40px;
+        height: 95px;
         display: flex;
         justify-content: center;
         align-items: center;
